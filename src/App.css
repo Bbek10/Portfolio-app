@@ -1,38 +1,279 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+* {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.portfolio-main {
+  padding: 40px;
+  background-color: #eeeeee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name-header {
+  margin-left: 100px;
+  font-family: 'Roboto Mono', monospace;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-main {
+  margin: 30px;
+}
+
+.intro-card {
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  box-shadow: 1px 1px 2px 2px grey;
+  border-radius: 2px;
+}
+
+.card-wrapper {
+  background-color: #eaeaea;
+  height: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  border-bottom: 1px solid #212121;
+  border-bottom-right-radius: 0 px;
+  border-bottom-left-radius: 0px;
+
+}
+
+.three-dots {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot-1 {
+  background-color: tomato;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+.dot-2 {
+  background-color: #ffc107;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+
+
+}
+
+.dot-3 {
+  background-color: #4caf50;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 10px;
+  box-shadow: 1px 1px 1px 1px gray;
+
+}
+
+.email-wrapper {
+  margin: 15px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.image-wrapper {
+  position: relative;
+  top: 10px;
+  left: 100px;
+
+
+
+}
+
+.user-image {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.description-wrapper {
+  background-color: #f0ead6;
+  width: 350px;
+  height: 150px;
+  position: relative;
+  top: 70px;
+  right: 100px;
+
+}
+
+.project-header {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.project-card {
+  width: 350px !important;
+  height: 500px !important;
+  height: auto;
+}
+
+.card-img {
+  display: flex;
+  height: 20px;
+
+}
+
+.card-header {
+  text-align: left;
+  font-size: 16px !important;
+}
+
+.card-tech {
+  text-align: left !important;
+}
+
+.card-desc {
+  text-align: left;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 40px;
+}
+
+.project-image {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  position: relative;
+  top: 100p x;
+}
+
+.links-button {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.light-theme {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid black;
+  cursor: pointer;
+  margin-right: 5px;
+
+}
+
+.dark-theme {
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.theme-buttons {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.theme-header {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 200;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-wrapper {
+  background: white;
+  width: 300px;
+  height: 150px;
+  position: relative;
+  top: 70px;
+  right: 150px;
+}
+
+.blue-card {
+  height: 150px;
+  width: 350px;
+  border: 1px solid #2196f3;
+  position: relative;
+  top: 30px;
+  left: 30px;
+  background-color: rgb(251, 249, 243, 0.8);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.blue-card-content {
+  padding: 30px;
+  margin-top: -10px;
+  font-family: 'Roboto Mono', monospace !important;
+
+}
+
+.small-dot-1 {
+  border: 0.5px solid #2196f3;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 45px;
+  left: 25px;
+  z-index: 9;
+}
+
+.small-dot-2 {
+  border: 0.5px solid #2196f3;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 37px;
+  float: right;
+  left: 35px;
+  z-index: 9;
+}
+
+.small-dot-3 {
+  border: 0.5px solid #2196f3;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 185px;
+  left: 25px;
+  z-index: 9;
+}
+
+.small-dot-4 {
+  border: 0.5px solid #2196f3;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  top: 176px;
+  float: right;
+  left: 35px;
+  z-index: 9;
 }
